@@ -23,3 +23,7 @@ app.use('/api/events', eventRoutes);
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
+app.get('/', (req, res) => {
+  res.send('Server is running...');
+});
